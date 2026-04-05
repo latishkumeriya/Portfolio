@@ -1,19 +1,11 @@
 import {
-  createContext,
   PropsWithChildren,
   useContext,
   useEffect,
   useState,
 } from "react";
 import Loading from "../components/Loading";
-
-interface LoadingType {
-  isLoading: boolean;
-  setIsLoading: (state: boolean) => void;
-  setLoading: (percent: number) => void;
-}
-
-export const LoadingContext = createContext<LoadingType | null>(null);
+import { LoadingContext, LoadingType } from "./LoadingContext";
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const [isLoading, setIsLoading] = useState(() => {
@@ -40,8 +32,6 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
       });
     }
   }, []);
-
-  useEffect(() => {}, [loading]);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>

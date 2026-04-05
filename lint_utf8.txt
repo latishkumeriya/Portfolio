@@ -1,0 +1,75 @@
+﻿
+C:\Users\Asus\portfolio\src\components\Character\Scene.tsx
+   25:11  error    'rect' is never reassigned. Use 'const' instead                                                                                                                                                                                                                    prefer-const
+   26:11  error    'container' is never reassigned. Use 'const' instead                                                                                                                                                                                                               prefer-const
+   48:24  error    Unexpected any. Specify a different type                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+   54:11  error    'progress' is never reassigned. Use 'const' instead                                                                                                                                                                                                                prefer-const
+   60:11  error    Expected an assignment or function call and instead saw an expression                                                                                                                                                                                              @typescript-eslint/no-unused-expressions
+   62:15  error    'character' is never reassigned. Use 'const' instead                                                                                                                                                                                                               prefer-const
+  138:21  warning  The ref value 'canvasDiv.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'canvasDiv.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  147:6   warning  React Hook useEffect has missing dependencies: 'character' and 'setLoading'. Either include them or remove the dependency array                                                                                                                                    react-hooks/exhaustive-deps
+
+C:\Users\Asus\portfolio\src\components\Character\utils\animationUtils.ts
+   6:7  error  'character' is never reassigned. Use 'const' instead        prefer-const
+   7:7  error  'mixer' is never reassigned. Use 'const' instead            prefer-const
+  48:9  error  'eyeBrowUpAction' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Asus\portfolio\src\components\Character\utils\character.ts
+  17:37  error  Promise executor functions should not be async  no-async-promise-executor
+  31:40  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+
+C:\Users\Asus\portfolio\src\components\Character\utils\lighting.ts
+  30:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Asus\portfolio\src\components\Character\utils\mouseUtils.ts
+  53:9  error  'minRotationX' is never reassigned. Use 'const' instead  prefer-const
+  54:9  error  'maxRotationX' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Asus\portfolio\src\components\Character\utils\resizeUtils.ts
+  12:7  error  'canvas3d' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Asus\portfolio\src\components\Loading.tsx
+   34:6   warning  React Hook useEffect has a missing dependency: 'setIsLoading'. Either include it or remove the dependency array                 react-hooks/exhaustive-deps
+   95:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  100:11  error    'rand' is never reassigned. Use 'const' instead                                                                                 prefer-const
+
+C:\Users\Asus\portfolio\src\components\Navbar.tsx
+  37:9   error  'links' is never reassigned. Use 'const' instead    prefer-const
+  39:11  error  'element' is never reassigned. Use 'const' instead  prefer-const
+  43:15  error  'elem' is never reassigned. Use 'const' instead     prefer-const
+  44:15  error  'section' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Asus\portfolio\src\components\WhatIDo.tsx
+  21:20  warning  The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+C:\Users\Asus\portfolio\src\components\Work.tsx
+  26:11  error  'padding' is never reassigned. Use 'const' instead   prefer-const
+  33:9   error  'timeline' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Asus\portfolio\src\components\utils\GsapScroll.ts
+  39:20  error  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  39:34  error  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  40:40  error  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  42:39  error  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  63:7   error  'neckBone' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\Asus\portfolio\src\components\utils\initialFX.ts
+  19:3  error  Unexpected var, use let or const instead              no-var
+  37:7  error  'TextProps' is never reassigned. Use 'const' instead  prefer-const
+  39:3  error  Unexpected var, use let or const instead              no-var
+  76:3  error  Unexpected var, use let or const instead              no-var
+  77:3  error  Unexpected var, use let or const instead              no-var
+  78:3  error  Unexpected var, use let or const instead              no-var
+  85:3  error  Unexpected var, use let or const instead              no-var
+
+C:\Users\Asus\portfolio\src\context\LoadingProvider.tsx
+  54:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\Asus\portfolio\src\utils\textSplitter.ts
+    7:22  error  The `Function` type accepts any function-like value.
+Prefer explicitly defining any function parameters and return type  @typescript-eslint/no-unsafe-function-type
+  103:11  error  'lines' is never reassigned. Use 'const' instead                                                                         prefer-const
+
+Γ£û 42 problems (36 errors, 6 warnings)
+  26 errors and 0 warnings potentially fixable with the `--fix` option.
+
