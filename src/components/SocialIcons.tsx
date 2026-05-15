@@ -4,6 +4,7 @@ import {
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
+import { MdDownload } from "react-icons/md";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 import { config } from "../config";
@@ -69,17 +70,28 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a
-        className="resume-button"
-        href={config.contact.resume}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <HoverLinks text="RESUME" />
-        <span>
-          <TbNotes />
-        </span>
-      </a>
+      <div className="resume-button-group">
+        <a
+          className="resume-button"
+          href={config.contact.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View Resume"
+        >
+          <HoverLinks text="RESUME" />
+          <span>
+            <TbNotes />
+          </span>
+        </a>
+        <a
+          className="resume-download-btn"
+          href={config.contact.resume}
+          download="Latish_Kumeriya_Resume.pdf"
+          title="Download Resume"
+        >
+          <MdDownload />
+        </a>
+      </div>
     </div>
   );
 };

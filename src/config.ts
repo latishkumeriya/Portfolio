@@ -70,82 +70,66 @@ export const config = {
     ],
     certifications: [
         {
+            title: "Full-Stack Web Development",
+            issuer: "SEED Infotech",
+            date: "2025",
+            description: "Completed hands-on training in front-end and back-end web development, covering modern technologies, database integration, and responsive UI design. Gained practical experience in building dynamic, scalable web applications with real-world project-based learning."
+        },
+        {
             title: "Introduction to Generative AI",
             issuer: "Google Cloud Skills Boost",
-            date: "2025"
+            date: "2025",
+            description: "Certified validation of technical proficiency and dedication to continuous learning in advanced software engineering principles."
         },
         {
             title: "AI Boost Bites: Prompting Like a Pro",
             issuer: "Google Cloud Skills Boost",
-            date: "2025"
+            date: "2025",
+            description: "Certified validation of technical proficiency and dedication to continuous learning in advanced software engineering principles."
         },
         {
             title: "AI Boost Bites: Your Personal AI Tutor",
             issuer: "Google Cloud Skills Boost",
-            date: "2025"
+            date: "2025",
+            description: "Certified validation of technical proficiency and dedication to continuous learning in advanced software engineering principles."
         },
         {
             title: "AI Boost Bites: Create Productivity Tools",
             issuer: "Google Cloud Skills Boost",
-            date: "2025"
+            date: "2025",
+            description: "Certified validation of technical proficiency and dedication to continuous learning in advanced software engineering principles."
         }
     ],
     projects: [
         {
             id: 1,
-            title: "AI-Based Resume Analyzer",
-            category: "AI / Full Stack",
-            technologies: "Spring Boot, React, OpenAI API, MySQL",
-            image: "/images/drishti.png",
-            description: "An intelligent application that analyzes resumes to extract key skills and experience, leveraging OpenAI's API to intelligently match candidate profiles with job descriptions."
+            title: "TicTacToe AI",
+            category: "AI / Web Application",
+            technologies: "Java 17, Spring Boot, Thymeleaf, Maven, Docker",
+            image: "/images/tictactoe.png",
+            description: "AI-powered TicTacToe web application where users can play against different AI difficulty levels. Implements game logic using Random Move, Win/Block Strategy, and Minimax Algorithm with Spring Boot MVC architecture and session-based state management.",
+            liveLink: "https://tictactoe-ai-production.up.railway.app",
+            githubLink: "https://github.com/latishkumeriya/tictactoe-ai"
         },
         {
             id: 2,
-            title: "Real-Time Chat Application",
+            title: "Employee Management System",
             category: "Full Stack",
-            technologies: "Spring Boot, WebSocket, React, MySQL",
-            image: "/images/votechain.png",
-            description: "A robust WebSocket-based chat application featuring real-time messaging latency, secure user authentication, and persistent chat history."
+            technologies: "Java 17, Spring Boot, Angular, MySQL, Spring Security, JWT, Maven, Spring Data JPA",
+            image: "/images/employee-management.png",
+            description: "Full-stack Employee Management System to manage employee records with secure login and protected routes. Includes CRUD operations, JWT-based authentication, Spring Security, REST API integration, and Angular frontend communication with Spring Boot backend.",
+            liveLink: "",
+            githubLink: ""
         },
         {
             id: 3,
-            title: "Online Code Compiler",
-            category: "Web Application",
-            technologies: "Spring Boot, React, REST APIs",
-            image: "/images/eie.png",
-            description: "A web-based IDE and secure code execution platform giving users the flexibility to write, compile, and execute code snippets efficiently."
-        },
-        {
-            id: 4,
-            title: "E-Commerce Web Application",
-            category: "Full Stack",
-            technologies: "Spring Boot, React/JSP, MySQL",
-            image: "/images/gamekroy.png",
-            description: "A comprehensive e-commerce platform incorporating product management, a dynamic shopping cart, secure checkout processes, and real-time order tracking."
-        },
-        {
-            id: 5,
-            title: "Smart Expense Tracker",
-            category: "Financial Tool",
-            technologies: "Spring Boot, Angular, MySQL",
-            image: "/images/redxchess.png",
-            description: "A financial management tool that allows users to seamlessly track daily expenses, categorize transactions, and view interactive spending reports for effective budgeting."
-        },
-        {
-            id: 6,
-            title: "Task Manager with AI Priority",
-            category: "AI / Web App",
-            technologies: "Spring Boot, Angular, MySQL",
-            image: "/images/floodhub.png",
-            description: "An advanced task management system that leverages AI algorithms to automatically prioritize to-dos, optimize workflows, and enhance daily productivity."
-        },
-        {
-            id: 7,
-            title: "Blog Management System",
-            category: "Web Application",
-            technologies: "Java Servlets/JSP, MySQL, Bootstrap",
-            image: "/images/phoenix.png",
-            description: "A content management platform enabling users to create, edit, and publish blog posts with comprehensive user role management and responsive design."
+            title: "Portfolio Website",
+            category: "Frontend / Web",
+            technologies: "React, TypeScript, GSAP, ThreeJS, WebGL, HTML, CSS, JavaScript",
+            image: "/images/portfolio.png",
+            description: "Modern interactive developer portfolio website showcasing projects, certifications, technical skills, and professional experience. Features responsive layouts, smooth animations, reusable React components, and visual effects using GSAP, ThreeJS, and WebGL.",
+            liveLink: "https://portfolio-seven-xi-61.vercel.app",
+            githubLink: ""
         }
     ],
     contact: {

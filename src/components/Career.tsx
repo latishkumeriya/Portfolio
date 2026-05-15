@@ -53,7 +53,7 @@ const Career = () => {
                     </div>
                     <h3>{cert.date}</h3>
                   </div>
-                  <p>Certified validation of technical proficiency and dedication to continuous learning in advanced software engineering principles.</p>
+                  <p>{cert.description}</p>
                 </div>
               ))}
             </div>

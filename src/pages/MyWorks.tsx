@@ -19,14 +19,28 @@ const MyWorks = () => {
         {config.projects.map((project, index) => (
           <div className="myworks-card" key={project.id} data-cursor="disable">
             <div className="myworks-card-number">0{index + 1}</div>
-            <div className="myworks-card-image">
-              <img src={project.image} alt={project.title} />
-            </div>
+            {project.image && (
+              <div className="myworks-card-image">
+                <img src={project.image} alt={project.title} />
+              </div>
+            )}
             <div className="myworks-card-info">
               <h3>{project.title}</h3>
               <p className="myworks-card-category">{project.category}</p>
               <p className="myworks-card-description">{project.description}</p>
               <p className="myworks-card-tech">{project.technologies}</p>
+              <div className="myworks-card-links">
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="myworks-link-btn live-btn">
+                    🔗 Live Demo
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="myworks-link-btn github-btn">
+                    ⌥ GitHub
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}

@@ -44,12 +44,8 @@
   transition: transform 0.3s ease-out;
 }
 .resume-button {
-  position: absolute;
-  z-index: 99;
   display: flex;
   gap: 5px;
-  bottom: 40px;
-  right: 0;
   width: auto;
   text-wrap: nowrap;
   letter-spacing: 4px;
@@ -72,6 +68,36 @@ div.resume-button span {
   display: flex;
   align-items: center;
 }
+.resume-button-group {
+  position: absolute;
+  z-index: 99;
+  bottom: 40px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resume-download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid #5e5e5e;
+  color: #5e5e5e;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.resume-download-btn:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #000;
+}
 .check-line {
   position: fixed;
   top: 655px;
@@ -88,6 +114,18 @@ div.resume-button span {
   }
   .social-icons a {
     font-size: 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .resume-download-btn {
+    display: none;
+  }
+  .resume-button-group {
+    transform: translateX(100%) rotateZ(-90deg);
+    transform-origin: left bottom;
+  }
+  .resume-button {
+    transform: none;
   }
 }
 @media only screen and (min-width: 768px) {
